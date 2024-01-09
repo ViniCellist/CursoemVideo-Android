@@ -51,6 +51,14 @@ body {
 /*MAIN AREA*/
 #container {
     background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .title-one {
@@ -62,6 +70,16 @@ body {
 }
 .title-three {
     font-family: var(--font-android);
+}
+
+.article-pic {
+    width: 100%;
+}
+
+.little-pic {
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 /*FOOTER AREA*/
