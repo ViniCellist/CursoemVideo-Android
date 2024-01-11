@@ -54,6 +54,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 0px black;
 }
 
@@ -65,7 +66,7 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: var(--cor1);
     padding: 10px;
     border-radius: 5px;;
     text-decoration: none;
@@ -95,97 +96,19 @@ body {
     color: var(--cor5);
     font-family: var(--font-android);
 }
-.title-two {
+.title-two, .title-three {
     font-family: var(--font-android);
     color: var(--cor4);
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 }
-.title-three {
-    font-family: var(--font-android);
-    color: var(--cor4);
-    font-size: 1.3em;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    text-indent: 8px;
-}
-.paragraph-one {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-}
 
-.paragraph-two {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 1em;
-}
-
-.paragraph-three {
+.paragraph-section {
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
     line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-four {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-five {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-six {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-seven {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-eight {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-nine {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
-}
-
-.paragraph-ten {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1em;
-    font-size: 1em;
 }
 
 .span-mark {
@@ -207,6 +130,9 @@ body {
     text-decoration: underline;    
 }
 
+.link-mark::after {
+    content: '\1F517'
+}
 
 .article-pic {
     width: 100%;
@@ -218,11 +144,79 @@ body {
     margin: auto;
 }
 
+.section-two {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+}
+
+.section-two > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* ASIDE AREA */
+
+.curiosity {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.253);
+}
+
+.list {
+    list-style-type: '\2714\00A0\00A0' ;
+    list-style-position: inside;
+    columns: 2;
+}
+.title-four {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.paragraph-aside {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+    font-size: 1em;
+}
+
+.link-candy {
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+.link-candy:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
 /*FOOTER AREA*/
 #ground {
     background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
 
-.paragraph-eleven {
+.dev {
+    text-decoration: none;
     color: white;
- }
+    font-weight: bolder;
+}
+
+.dev:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
